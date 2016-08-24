@@ -1,0 +1,38 @@
+{
+  "name": "slack-irc-bridge",
+  "description": "A bridge for mirroring a Slack channel to an IRC channel and vice-versa",
+  "repository": "https://github.com/justindarc/slack-irc-bridge",
+  "success_url": "/",
+  "env": {
+    "IRC_SERVER": {
+      "required": true
+    },
+    "IRC_PORT": {
+      "required": true
+    },
+    "IRC_SECURE": {
+      "required": true
+    },
+    "IRC_NICK": {
+      "required": true
+    },
+    "IRC_PASSWORD": {
+      "required": true
+    },
+    "IRC_CHANNEL": {
+      "required": true
+    },
+    "SLACK_CHANNEL": {
+      "required": true
+    },
+    "SLACK_TOKEN": {
+      "description": "Slack bot RTM API token",
+      "required": true
+    },
+    "HOST": {
+      "required": true
+    },
+    "NODE_ENV": "staging"
+  },
+  "image": "heroku/nodejs"
+}
